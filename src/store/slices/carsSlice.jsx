@@ -18,7 +18,7 @@ const carsSlice = createSlice({
       });
     },
     removeCar(state, action) {
-      state.cars = state.cars.filter((car) => car.id !== action.id);
+      state.cars = state.cars.filter((car) => car.id !== action.payload);
     },
   },
 });
